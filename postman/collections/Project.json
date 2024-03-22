@@ -178,6 +178,67 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7d97dc4b-03c1-4a06-bad8-9e285da79f8f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "be666bf4-f2fd-4174-be19-2acef1549a99",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
