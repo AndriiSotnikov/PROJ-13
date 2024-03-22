@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "517dae2a-2c6a-4a02-90c4-0584d87e59fb",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "33644139-517dae2a-2c6a-4a02-90c4-0584d87e59fb"
+	},
+	"item": [
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+			"id": "7074bf25-203f-4e9a-930c-95a0fb5b4515",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+					"auth": {
+						"user": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP"
+					},
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api/addresses/",
+			"id": "ee71445b-10b2-4dbe-8d34-42a02c76fe7e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://164.92.218.36:8080/api/addresses/3",
+					"protocol": "http",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "30b695a8-440e-44a6-8459-65dc5eff2d83",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7d97dc4b-03c1-4a06-bad8-9e285da79f8f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "60c3fd5d-e3ef-4f17-90c2-a05e5ae7686d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
